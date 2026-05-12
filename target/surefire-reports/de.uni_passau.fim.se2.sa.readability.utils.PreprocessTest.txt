@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: de.uni_passau.fim.se2.sa.readability.utils.PreprocessTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.013 s <<< FAILURE! -- in de.uni_passau.fim.se2.sa.readability.utils.PreprocessTest
+de.uni_passau.fim.se2.sa.readability.utils.PreprocessTest.testCsvFormat -- Time elapsed: 0.012 s <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:365)
+	at java.base/java.util.ArrayList.get(ArrayList.java:428)
+	at de.uni_passau.fim.se2.sa.readability.utils.Preprocess.collectCSVBody(Preprocess.java:58)
+	at de.uni_passau.fim.se2.sa.readability.utils.PreprocessTest.testCsvFormat(PreprocessTest.java:27)
+

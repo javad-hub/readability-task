@@ -1,0 +1,41 @@
+-------------------------------------------------------------------------------
+Test set: de.uni_passau.fim.se2.sa.readability.utils.ClassifyTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 8.580 s <<< FAILURE! -- in de.uni_passau.fim.se2.sa.readability.utils.ClassifyTest
+de.uni_passau.fim.se2.sa.readability.utils.ClassifyTest.testLoadAndTrain -- Time elapsed: 8.576 s <<< ERROR!
+org.junit.platform.commons.JUnitException: Failed to close extension context
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: java.io.IOException: Failed to delete temp directory C:\Users\Asus\AppData\Local\Temp\junit-9681448057901270257. The following paths could not be deleted (see suppressed exceptions for details): <root>, data.csv
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:395)
+	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:261)
+	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:261)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:571)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)
+	... 2 more
+	Suppressed: java.nio.file.DirectoryNotEmptyException: C:\Users\Asus\AppData\Local\Temp\junit-9681448057901270257
+		at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:266)
+		at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+		at java.base/java.nio.file.Files.delete(Files.java:1052)
+		at java.base/java.nio.file.Files.walkFileTree(Files.java:2560)
+		at java.base/java.nio.file.Files.walkFileTree(Files.java:2609)
+		... 13 more
+	Suppressed: java.nio.file.FileSystemException: C:\Users\Asus\AppData\Local\Temp\junit-9681448057901270257\data.csv: The process cannot access the file because it is being used by another process
+		at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+		at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+		at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+		at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+		at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+		at java.base/java.nio.file.Files.delete(Files.java:1052)
+		at java.base/java.nio.file.Files.walkFileTree(Files.java:2543)
+		at java.base/java.nio.file.Files.walkFileTree(Files.java:2609)
+		... 13 more
+		Suppressed: java.nio.file.FileSystemException: C:\Users\Asus\AppData\Local\Temp\junit-9681448057901270257\data.csv: The process cannot access the file because it is being used by another process
+			... 21 more
+

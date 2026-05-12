@@ -1,0 +1,5 @@
+de\uni_passau\fim\se2\sa\readability\features\CyclomaticComplexityFeatureTest.class
+de\uni_passau\fim\se2\sa\readability\utils\ClassifyTest.class
+de\uni_passau\fim\se2\sa\readability\features\TokenEntropyFeatureTest.class
+de\uni_passau\fim\se2\sa\readability\utils\PreprocessTest.class
+de\uni_passau\fim\se2\sa\readability\features\NumberLinesFeatureTest.class
